@@ -1,18 +1,12 @@
-import React, { useState } from "react";
-import FormBox from "./Form";
-import List from "./List";
+import React from 'react'
+import UseEffect from './UseEffect'
 
 const Main = () => {
-  const [userInfo, SetUserInfo] = useState([]);
-  const getInfo = (userObj) => {
-    SetUserInfo([...userInfo, userObj]);
-  };
   return (
-    <section className="main">
-      <FormBox getInfo={getInfo} />
-      <List userInfo={userInfo} />
-    </section>
-  );
-};
+    <div>
+      <UseEffect />
+    </div>
+  )
+}
 
-export default Main;
+export default Main
